@@ -1,0 +1,444 @@
+@import url(animate.css);
+html,
+body {
+  font-size: 14px; }
+
+a {
+  color: #000; }
+
+/* Main-Header*/
+.main-header {
+  padding: 0;
+  margin: 0;
+  background-color: #0072bc;
+  position: relative;
+  z-index: 1; }
+  .main-header .thumb-header {
+    padding: 0;
+    margin: 3vh 0 0 0;
+    text-align: center; }
+    .main-header .thumb-header img {
+      max-width: 130px; }
+  .main-header .main-menu {
+    padding: 0;
+    margin: 4vh 0 0 0;
+    text-align: center;
+    list-style: none; }
+    .main-header .main-menu > li {
+      display: inline-block; }
+      .main-header .main-menu > li a {
+        font: 400 normal 1rem "Kanit";
+        color: #ffffff; }
+      .main-header .main-menu > li + li {
+        margin-left: 60px; }
+  .main-header .field {
+    float: right; }
+  .main-header .control.has-icons-left .icon, .main-header .control.has-icons-right .icon {
+    margin-top: 3vh;
+    color: #0072bc; }
+  .main-header .input, .main-header .textarea {
+    font: 400 normal 1rem "Kanit";
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 3vh; }
+
+/* Global-Style */
+.section-header {
+  padding: 7vh 0;
+  text-align: center; }
+  .section-header .header-wrapper {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    max-width: 100%; }
+    .section-header .header-wrapper .line {
+      width: 100%;
+      height: 1px;
+      background: #0072bc; }
+    .section-header .header-wrapper .text {
+      white-space: nowrap;
+      margin-right: 50px;
+      margin-left: 50px;
+      font: 700 normal 1.8rem "Kanit";
+      color: #ffffff; }
+  .section-header .view-all {
+    padding: 2vh 0;
+    font: 400 normal 1.4rem "Kanit";
+    color: #ffffff; }
+
+/*Home-Banner */
+.home-banner {
+  padding: 0;
+  margin: 0; }
+  .home-banner .banner-item {
+    width: 100%;
+    padding: 18vh 0;
+    position: relative;
+    z-index: 0; }
+    .home-banner .banner-item img {
+      width: 100%;
+      height: auto; }
+    .home-banner .banner-item:before {
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-clip-path: polygon(51% 0, 100% 0%, 51% 100%, 0% 100%);
+      clip-path: polygon(51% 0, 100% 0%, 51% 100%, 0% 100%);
+      background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-linear-gradient(315deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      background: -o-linear-gradient(315deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+    .home-banner .banner-item:after {
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: -12vw;
+      -webkit-clip-path: polygon(51% 0, 100% 0%, 51% 100%, 0% 100%);
+      clip-path: polygon(51% 0, 100% 0%, 51% 100%, 0% 100%);
+      background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-linear-gradient(315deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      background: -o-linear-gradient(315deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 1%, rgba(0, 0, 0, 0.65) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+  .home-banner .items:before {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(left, black 0%, black 50%, rgba(0, 0, 0, 0.7) 64%, transparent 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, black 0%, black 50%, rgba(0, 0, 0, 0.7) 64%, transparent 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, black), color-stop(64%, rgba(0, 0, 0, 0.7)), to(transparent));
+    background: -o-linear-gradient(left, black 0%, black 50%, rgba(0, 0, 0, 0.7) 64%, transparent 100%);
+    background: linear-gradient(to right, black 0%, black 50%, rgba(0, 0, 0, 0.7) 64%, transparent 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+    /* IE6-9 */ }
+  .home-banner .items:after {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: -moz-linear-gradient(left, transparent 0%, transparent 1%, transparent 53%, rgba(0, 0, 0, 0.7) 75%, black 95%, black 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, transparent 0%, transparent 1%, transparent 53%, rgba(0, 0, 0, 0.7) 75%, black 95%, black 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(1%, transparent), color-stop(53%, transparent), color-stop(75%, rgba(0, 0, 0, 0.7)), color-stop(95%, black), to(black));
+    background: -o-linear-gradient(left, transparent 0%, transparent 1%, transparent 53%, rgba(0, 0, 0, 0.7) 75%, black 95%, black 100%);
+    background: linear-gradient(to right, transparent 0%, transparent 1%, transparent 53%, rgba(0, 0, 0, 0.7) 75%, black 95%, black 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+    /* IE6-9 */ }
+  .home-banner .light-item:before {
+    display: block;
+    content: '';
+    width: 500px;
+    height: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    background-image: url("../img/light-banner.png");
+    background-repeat: no-repeat; }
+  .home-banner .title-banner {
+    padding: 0;
+    margin: 0; }
+    .home-banner .title-banner .title {
+      font: 700 normal 6rem/0.8 "Kanit";
+      color: #ffffff; }
+      .home-banner .title-banner .title.-thin {
+        font: 400 normal 6rem/0.8 "Kanit"; }
+      .home-banner .title-banner .title.-search {
+        font: 700 normal 2rem "Kanit"; }
+    .home-banner .title-banner .sub-title {
+      padding: 0 0 3vh 0;
+      font: 700 normal 1rem "Kanit";
+      color: #ffffff;
+      letter-spacing: 0.1em; }
+    .home-banner .title-banner .desc {
+      padding: 0 0 2vh 0;
+      font: 400 normal 1rem "Kanit";
+      color: #ffffff; }
+    .home-banner .title-banner .select {
+      width: 100%; }
+    .home-banner .title-banner .select select {
+      padding-bottom: calc(0.375em - 1px);
+      padding-left: calc(0.625em - 1px);
+      padding-right: calc(0.625em - 1px);
+      padding-top: calc(0.375em - 1px);
+      background-color: white;
+      border-color: #dbdbdb;
+      color: #363636;
+      font: 400 normal 1rem "Kanit";
+      max-width: 100%;
+      outline: none;
+      width: 100%;
+      text-align: center;
+      text-align-last: center; }
+    .home-banner .title-banner .control {
+      font: 400 normal 1rem "Kanit";
+      position: relative;
+      text-align: center;
+      padding: 1vh 0; }
+
+/* Why-Us */
+.why-us {
+  padding: 0;
+  margin: -10vh 0 0 0;
+  background-color: #000000; }
+  .why-us .why-us-item {
+    padding: 10vh 0;
+    background-color: #0072bc;
+    text-align: center;
+    position: relative;
+    -webkit-clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 76%, 92% 100%, 0 100%, 0% 80%, 0 25%);
+    clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 76%, 92% 100%, 0 100%, 0% 80%, 0 25%); }
+  .why-us .item {
+    padding: 0;
+    margin: 0; }
+    .why-us .item.-sale {
+      border-left: 1px solid #ffffff;
+      border-Right: 1px solid #ffffff; }
+    .why-us .item.-sheet {
+      border-Right: 1px solid #ffffff; }
+    .why-us .item .thumb-why-us {
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+      .why-us .item .thumb-why-us img {
+        max-width: 200px; }
+    .why-us .item .title {
+      font: 700 normal 1rem/3 "Kanit";
+      color: #ffffff; }
+
+/* Recently-Car */
+.recently-car {
+  padding: 5vh 0 0 0;
+  margin: 0;
+  background-color: #000000;
+  text-align: center; }
+  .recently-car .item-recently {
+    padding: 0 0;
+    margin: 0; }
+    .recently-car .item-recently .caption {
+      padding: 1vh 0 0 0;
+      font: 400 normal 1rem "Kanit";
+      color: #ffffff; }
+    .recently-car .item-recently .caption:hover {
+      color: #0072bc; }
+  .recently-car .thumb-car img {
+    max-width: 100%; }
+  .recently-car figure {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden; }
+  .recently-car figure:hover + span {
+    bottom: -36px;
+    opacity: 1; }
+  .recently-car .hover01 figure img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+  .recently-car .hover01 figure:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+/* New-Event */
+.new-event {
+  padding: 0 0 10vh 0;
+  margin: 0;
+  background-color: #000000; }
+  .new-event figure {
+    max-width: 350px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden; }
+  .new-event figure:hover + span {
+    bottom: -36px;
+    opacity: 1; }
+  .new-event .hover01 figure img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+  .new-event .hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3); }
+  .new-event .title {
+    padding: 2vh 0 0 0;
+    font: 700 normal 1.2rem "Kanit";
+    color: #ffffff; }
+  .new-event .desc {
+    font: 400 normal 1rem "Kanit";
+    color: #ffffff; }
+
+.main-footer {
+  padding: 5vh 0;
+  margin: 0;
+  background-color: #111111; }
+  .main-footer .main-menu {
+    padding: 2vh 0;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+    border-bottom: 1px solid #0072bc; }
+    .main-footer .main-menu > li {
+      display: inline-block; }
+      .main-footer .main-menu > li a {
+        font: 400 normal 1rem "Kanit";
+        color: #ffffff; }
+      .main-footer .main-menu > li + li {
+        margin-left: 40px; }
+  .main-footer .thumb-footer {
+    width: 95%;
+    padding: 12vh 0;
+    margin: -20vh 0 0 0;
+    text-align: center;
+    position: relative;
+    background: #0072bc;
+    -webkit-clip-path: polygon(24% 0, 100% 0, 100% 75%, 77% 100%, 0 100%, 0% 60%, 0 24%);
+    clip-path: polygon(24% 0, 100% 0, 100% 75%, 77% 100%, 0 100%, 0% 60%, 0 24%); }
+    .main-footer .thumb-footer img {
+      max-width: 300px; }
+  .main-footer .title {
+    font: 700 normal 1.2rem "Kanit";
+    color: #ffffff; }
+  .main-footer .desc {
+    font: 400 normal 1rem "Kanit";
+    color: #ffffff; }
+  .main-footer .main-socail {
+    padding: 2vh 0;
+    margin: 0;
+    list-style: none;
+    text-align: left; }
+    .main-footer .main-socail > li {
+      display: inline-block; }
+      .main-footer .main-socail > li a {
+        font: 400 normal 1.5rem "Kanit";
+        color: #ffffff; }
+      .main-footer .main-socail > li + li {
+        margin-left: 20px; }
+
+/* Off Canvas Style */
+[off-canvas] {
+  background: #0072bc;
+  border-right: solid 1px #EEE; }
+
+/* Animation */
+.fade-in-up,
+.fade-in {
+  opacity: 0; }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  opacity: 1; }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  opacity: 1; }
+
+.fadeOut {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.btn {
+  height: auto;
+  font: 700 normal 0.9rem/7 "Kanit";
+  letter-spacing: 0.1em; }
+  .btn.-bordered {
+    border-width: 2px;
+    border-style: solid; }
+    .btn.-bordered.-blue {
+      background-color: #0072bc;
+      border-color: #0072bc;
+      color: #ffffff;
+      border-radius: 0px;
+      padding: 10px 60px; }
+    .btn.-bordered.-new {
+      position: absolute;
+      margin: -47px 0 0 0;
+      font: 700 normal 0.9rem "Kanit";
+      background-color: #0072bc;
+      border-color: #0072bc;
+      color: #ffffff;
+      border-radius: 0px;
+      padding: 10px 60px; }
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent; }
+
+@media only screen and (max-width: 991px) {
+  /* Toggle Menu Button */
+  .toggle-menu {
+    display: inline-block;
+    border-radius: 5px;
+    border: solid 1px #EEE;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer; }
+    .toggle-menu i {
+      margin-right: 5px; }
+    .toggle-menu:hover {
+      background: #0072bc;
+      color: #FFF;
+      border-color: transparent; } }
+
+@media only screen and (min-width: 992px) {
+  /* Hide Mobile Bar Toggle Menu */
+  .toggle-menu {
+    display: none; } }
