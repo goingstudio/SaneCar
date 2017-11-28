@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit");
 @import url(animate.css);
 html,
 body {
@@ -19,6 +20,10 @@ a {
     text-align: center; }
     .main-header .thumb-header img {
       max-width: 130px; }
+  .main-header .thumb-mobile {
+    display: none; }
+  .main-header .toggle-menu {
+    display: none; }
   .main-header .main-menu {
     padding: 0;
     margin: 4vh 0 0 0;
@@ -216,6 +221,8 @@ a {
       position: relative;
       text-align: center;
       padding: 1vh 0; }
+    .home-banner .title-banner .columns.is-gapless:not(:last-child) {
+      margin-bottom: 0rem; }
 
 /* Why-Us */
 .why-us {
@@ -423,20 +430,261 @@ a {
   background: transparent; }
 
 @media only screen and (max-width: 991px) {
-  /* Toggle Menu Button */
-  .toggle-menu {
-    display: inline-block;
-    border-radius: 5px;
-    border: solid 1px #EEE;
-    padding: 5px 10px;
-    margin: 10px;
-    cursor: pointer; }
-    .toggle-menu i {
-      margin-right: 5px; }
-    .toggle-menu:hover {
-      background: #0072bc;
-      color: #FFF;
-      border-color: transparent; } }
+  /* Global-Style */
+  .section-header {
+    padding: 5vh 0; }
+    .section-header .header-wrapper {
+      padding: 0 5vw; }
+      .section-header .header-wrapper .text {
+        white-space: nowrap;
+        margin-right: 30px;
+        margin-left: 30px;
+        font: 700 normal 1.8rem "Kanit";
+        color: #ffffff; }
+  /* Main-Header*/
+  .main-header {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    position: relative; }
+    .main-header .thumb-header {
+      display: none; }
+    .main-header .thumb-mobile {
+      display: inline;
+      padding: 0;
+      margin: 2vh 0 0 4vw;
+      position: absolute;
+      text-align: center; }
+      .main-header .thumb-mobile img {
+        max-width: 130px; }
+    .main-header .toggle-menu {
+      padding-left: 70vw;
+      width: 100%;
+      background-color: #000000;
+      display: inline-block;
+      line-height: 40px;
+      text-align: center;
+      font-size: 1.6rem;
+      color: white; }
+      .main-header .toggle-menu span {
+        font: 700 normal 1.6rem/40px "Kanit"; }
+    .main-header .main-menu {
+      margin: -1.7vh 0 0 0;
+      display: none;
+      color: white; }
+      .main-header .main-menu li {
+        text-align: center;
+        display: block;
+        opacity: 0;
+        -webkit-transition-delay: .5s;
+        -o-transition-delay: .5s;
+        transition-delay: .5s;
+        -webkit-transform: translateY(10px) scale(1.1);
+        -ms-transform: translateY(10px) scale(1.1);
+        transform: translateY(10px) scale(1.1);
+        -webkit-transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        -o-transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        -webkit-transition-delay: .2s;
+        -o-transition-delay: .2s;
+        transition-delay: .2s;
+        background-color: #000000; }
+        .main-header .main-menu li + li {
+          background-color: #000000;
+          border-top: solid 1px #EEE; }
+        .main-header .main-menu li + li {
+          margin-left: 0; }
+        .main-header .main-menu li a {
+          display: block;
+          padding: 10px 10px;
+          font: 400 normal 1rem/20px "Kanit";
+          color: white; }
+        .main-header .main-menu li.current-menu-item {
+          margin-top: -7px; }
+          .main-header .main-menu li.current-menu-item a {
+            font-weight: 700;
+            color: #76b729; }
+      .main-header .main-menu.active {
+        display: block; }
+        .main-header .main-menu.active li {
+          opacity: 1;
+          -webkit-transform: translateY(5px) scale(1.1);
+          -ms-transform: translateY(5px) scale(1.1);
+          transform: translateY(5px) scale(1.1); }
+    .main-header .control.has-icons-left .icon, .main-header .control.has-icons-right .icon {
+      display: none; }
+    .main-header .input, .main-header .textarea {
+      display: none; }
+  /*Home-Banner */
+  .home-banner {
+    padding: 0;
+    margin: 0; }
+    .home-banner .banner-item {
+      width: 100%;
+      padding: 0;
+      position: relative;
+      z-index: 0; }
+      .home-banner .banner-item img {
+        width: 100%;
+        height: auto; }
+      .home-banner .banner-item:before {
+        width: 70%; }
+      .home-banner .banner-item:after {
+        width: 30%; }
+    .home-banner .items:before {
+      width: 50%; }
+    .home-banner .items:after {
+      width: 50%; }
+    .home-banner .light-item:before {
+      top: 38%; }
+    .home-banner .light-item:after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: -moz-linear-gradient(top, black 0%, black 1%, black 6%, rgba(0, 0, 0, 0.7) 23%, transparent 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, black 0%, black 1%, black 6%, rgba(0, 0, 0, 0.7) 23%, transparent 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(1%, black), color-stop(6%, black), color-stop(23%, rgba(0, 0, 0, 0.7)), to(transparent));
+      background: -o-linear-gradient(top, black 0%, black 1%, black 6%, rgba(0, 0, 0, 0.7) 23%, transparent 100%);
+      background: linear-gradient(to bottom, black 0%, black 1%, black 6%, rgba(0, 0, 0, 0.7) 23%, transparent 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
+      /* IE6-9 */ }
+    .home-banner .title-banner {
+      padding: 5vh 3vw;
+      margin: 0;
+      text-align: center; }
+      .home-banner .title-banner.-search {
+        text-align: center;
+        padding: 0 0 5vh 0;
+        margin: -7vh 0 0 0; }
+      .home-banner .title-banner .title {
+        font: 700 normal 6rem/0.8 "Kanit";
+        color: #ffffff; }
+        .home-banner .title-banner .title.-thin {
+          font: 400 normal 6rem/0.8 "Kanit"; }
+        .home-banner .title-banner .title.-search {
+          font: 700 normal 2rem "Kanit"; }
+      .home-banner .title-banner .sub-title {
+        padding: 0 0 3vh 0;
+        font: 700 normal 1rem "Kanit";
+        color: #ffffff;
+        letter-spacing: 0.1em; }
+      .home-banner .title-banner .desc {
+        padding: 0 0 2vh 0;
+        font: 400 normal 1rem "Kanit";
+        color: #ffffff; }
+      .home-banner .title-banner .select select {
+        padding-bottom: calc(0.375em - 1px);
+        padding-left: calc(0.625em - 1px);
+        padding-right: calc(0.625em - 1px);
+        padding-top: calc(0.375em - 1px);
+        background-color: white;
+        border-color: #dbdbdb;
+        color: #363636;
+        font: 400 normal 1rem "Kanit";
+        max-width: 100%;
+        outline: none;
+        width: 100%;
+        text-align: left;
+        text-align-last: left; }
+      .home-banner .title-banner .select:not(.is-multiple)::after {
+        border: 1px solid #3273dc;
+        border-right: 0;
+        border-top: 0;
+        content: " ";
+        display: block;
+        height: 0.5em;
+        pointer-events: none;
+        position: absolute;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: 0.5em;
+        margin-top: -0.375em;
+        right: 2em;
+        top: 50%;
+        z-index: 4; }
+      .home-banner .title-banner .control {
+        font: 400 normal 1rem "Kanit";
+        position: relative;
+        text-align: left;
+        padding: 1vh 4vw; }
+      .home-banner .title-banner .btn {
+        height: auto;
+        font: 700 normal 0.9rem/7 "Kanit";
+        letter-spacing: 0.1em; }
+        .home-banner .title-banner .btn.-bordered {
+          border-width: 2px;
+          border-style: solid; }
+          .home-banner .title-banner .btn.-bordered.-blue {
+            margin: -47px 0 0 0;
+            background-color: #0072bc;
+            border-color: #0072bc;
+            color: #ffffff;
+            border-radius: 0px;
+            padding: 10px 60px; }
+  /* Why-Us */
+  .why-us {
+    padding: 0;
+    margin: 0; }
+    .why-us .why-us-item {
+      padding: 5vh 0;
+      -webkit-clip-path: none;
+      clip-path: none; }
+    .why-us .item {
+      padding: 0;
+      margin: 0; }
+      .why-us .item.-sale {
+        border-left: none;
+        border-Right: none; }
+      .why-us .item.-sheet {
+        border-Right: none; }
+      .why-us .item .thumb-why-us {
+        padding: 0;
+        margin: 0;
+        text-align: center; }
+        .why-us .item .thumb-why-us img {
+          max-width: 200px; }
+  /* New-Event */
+  .new-event {
+    padding: 0 3vw 10vh 3vw;
+    text-align: center; }
+    .new-event figure {
+      max-width: 100%; }
+    .new-event .btn {
+      height: auto;
+      font: 700 normal 0.9rem/7 "Kanit";
+      letter-spacing: 0.1em; }
+      .new-event .btn.-bordered {
+        border-width: 2px;
+        border-style: solid; }
+        .new-event .btn.-bordered.-new {
+          margin: -47px 0 0 31px; }
+  /* Main-Footer */
+  .main-footer {
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+    .main-footer .main-menu {
+      display: none; }
+    .main-footer .thumb-footer {
+      display: none; }
+    .main-footer .title {
+      font: 700 normal 1.2rem "Kanit";
+      color: #ffffff; }
+    .main-footer .desc {
+      font: 400 normal 1rem "Kanit";
+      color: #ffffff; }
+    .main-footer .main-socail {
+      padding: 2vh 0;
+      text-align: center; } }
 
 @media only screen and (min-width: 992px) {
   /* Hide Mobile Bar Toggle Menu */

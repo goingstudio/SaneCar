@@ -3,18 +3,11 @@ jQuery(document).ready(function($) {
         scrollContainer: '#page'
     }).init();
 
-    // //Slidebars
-    // var controller = new slidebars();
-    // controller.init();
+    var mainMenu = $('.main-menu');
+    var toggleMenu = $('.toggle-menu');
 
-    // // Toggle Slidebars
-    // $('.toggle-menu').on('click', function(event) {
-    //     // Stop default action and bubbling
-    //     event.stopPropagation();
-    //     event.preventDefault();
-
-    //     // Toggle the Slidebar with id 'id-1'
-    //     controller.toggle('page-sidebar');
-    // });
+    toggleMenu.bind('click', function () {
+        mainMenu.toggleClass('active');
+    });
 
 });

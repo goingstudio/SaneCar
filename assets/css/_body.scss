@@ -175,6 +175,9 @@
             text-align: center;
             padding: 1vh 0;
         }
+        .columns.is-gapless:not(:last-child) {
+            margin-bottom: 0rem;
+        }
 
     }
 }
